@@ -298,7 +298,7 @@ export default function Home() {
                                 </li>)}
                             </ul>
                         </div>
-                        <a href={"#demo-form"} id={"header-demo-request-button"} className={"text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
+                        <a href={"#demo-form"} id={"header-demo-request-button"} className={"flex items-center text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
                             درخواست دمو رایگان
                         </a>
                     </div>
@@ -379,7 +379,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className={"w-full bg-primary-brand py-12 md:py-32"}>
+            <section className={"w-full  relative bg-primary-brand py-12 md:py-32"}>
+                <div className={"absolute  -left-[40px] bottom-0  w-6/12"}>
+                    <Image  height={608} width={1080} layout={"responsive"} src={"/head1.png"}/>
+                </div>
                 <div className={"container mx-auto"}>
                     <h1 className={"text-white max-w-4xl font-black text-display-small md:text-display-large"}>
                         20%
@@ -408,7 +411,7 @@ export default function Home() {
                         افزایش دهید
                     </h2>
                     <div
-                        className={"max-w-4xl md:space-x-reverse mt-3 md:space-x-12 text-justify md:flex items-center"}>
+                        className={"max-w-2xl md:space-x-reverse mt-3 text-justify md:flex space-x-12 items-center"}>
                         <p className={"md:max-w-3xl font-normal mb-4 text-body-large md:text-title-large text-white/[80%]"}>
                             IBSng ابزار مورد نیاز برای مدیریت و نظارت بر کاربران و ترافیک شبکه داخلی سازمان را در اختیار
                             شما
