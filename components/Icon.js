@@ -22,6 +22,9 @@ export default function Icon({type, size, weight, grade, children,className,onCl
         case "sharp":
             resTypeStyle = sharp
             break;
+        default:
+            resTypeStyle = outline
+            break;
     }
     return (
         <i onClick={onClick&&onClick} className={`${resTypeStyle} text-[${size?size + "px":"24px"}] ${className?className:""}`}>

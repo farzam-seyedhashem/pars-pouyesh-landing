@@ -1,3 +1,5 @@
+@import 'material-symbols';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +26,30 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/IRANYekanXVFaNumVF.woff2") format("woff2 supports variations"),
+  url("/IRANYekanXVFaNumVF.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-display: swap;
+}
+root,body,html{
+  font-family: IRANYekan, serif !important;
+}
+@keyframes marquee {
+  0% {
+    margin-right: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    margin-right: 0;
+    transform: translateX(100%);
+  }
+}
+.marquee {
+  animation: marquee 60s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
 }
