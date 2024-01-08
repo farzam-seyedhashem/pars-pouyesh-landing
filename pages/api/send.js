@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         // })
         const {data, error} = await resend.emails.send({
             from: 'send@atighcompany.com',
-            to: ['farzam.seyedhashem@gmail.com'],
+            to: ['sales@parspooyesh.com'],
             // sales@parspooyesh.com
             subject: `${"درخواست دموی رایگان"+" "+reqData.name}`,
             react: EmailTemplate({reqData: reqData}),
