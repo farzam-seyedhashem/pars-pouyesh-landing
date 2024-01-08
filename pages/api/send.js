@@ -23,12 +23,12 @@ export default async function handler(req, res) {
         // })
         const {data, error} = await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: ['sales@parspooyesh.com'],
+            to: ['farzam.seyedhashem@gmail.com'],
             subject: `${"درخواست دموی رایگان"+" "+reqData.name}`,
             react: EmailTemplate({reqData: reqData}),
         });
         if (error) {
-             return res.redirect(301, `/success`)
+             return res.redirect(301, `/error`)
         }
         return res.redirect(301, `/success`)
     } else {
