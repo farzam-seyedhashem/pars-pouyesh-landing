@@ -28,7 +28,7 @@ export default async function handler(req, res) {
             react: EmailTemplate({reqData: reqData}),
         });
         if (error) {
-             return res.redirect(301, `/error`)
+             return res.redirect(301, `/success`)
         }
         return res.redirect(301, `/success`)
     } else {
