@@ -22,8 +22,9 @@ export default async function handler(req, res) {
         //     console.log(fields.name)
         // })
         const {data, error} = await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: 'send@atighcompany.com',
             to: ['farzam.seyedhashem@gmail.com'],
+            // sales@parspooyesh.com
             subject: `${"درخواست دموی رایگان"+" "+reqData.name}`,
             react: EmailTemplate({reqData: reqData}),
         });
