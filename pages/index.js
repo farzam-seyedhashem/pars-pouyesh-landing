@@ -419,11 +419,11 @@ export default function Home() {
                         </span>
                     </h1>
                     <h2 className={"text-title-large md:text-headline-small font-normal text-white/[90%] mt-4 md:mt-8"}>
-                        <span className={"mx-2 text-white font-bold"}>
+                        <span className={"inline-flex mx-2 text-white font-bold"}>
                         امنیت
                             </span>
                         و
-                        <span className={"mx-2 text-white font-bold"}>
+                        <span className={"inline-flex mx-2 text-white font-bold"}>
                         کارایی
                         </span>
                         شبکه خود را با
@@ -471,7 +471,7 @@ export default function Home() {
                                     <Icon className={"text-[36px] text-primary-brand"}>
                                         {item.icon}
                                     </Icon>
-                                    <h4 className={" text-title-large text-zinc-800"}>
+                                    <h4 className={" text-[18px] text-zinc-800"}>
                                         {item.title}
                                     </h4>
                                 </div>)}
@@ -698,7 +698,7 @@ export default function Home() {
                                 گرفته است. برای بهره‌مندی از این شرایط ویژه همین الان اقدام کنید!
                             </p>
                             <div
-                                className={"mt-6 text-center lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
+                                className={"mt-6 text-white text-center lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
                                 <div
                                     className={"bg-primary-brand flex items-center justify-center px-4 py-3 font-bold text-title-medium col-span-1 w-full lg:w-3/12 h-[140px] rounded-[8px]   border-primary-brand"}>
                                     20% تخفیف اکانتینگ IBSng
