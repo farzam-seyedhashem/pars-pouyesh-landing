@@ -381,7 +381,7 @@ export default function Home() {
                                 menu
                             </Icon>
                         </button>
-                        <div className={"mr-4 lg:mr-0 ml-6 w-[120px] lg:w-[150px] relative"}>
+                        <div className={"mr-4 lg:mr-0 ml-6 w-[80px] md:w-[120px] lg:w-[150px] relative"}>
                             <Image width={966} height={297} layout={"responsive"} src={"/logo.svg"} alt={"logo"}/>
                         </div>
                         {/*<div>*/}
@@ -488,7 +488,7 @@ export default function Home() {
                                 </p>
                                 <form method={"POST"} action={"/api/send"}
                                       className={"grid mb-2 mt-4 grid-cols-2 gap-4"}>
-                                    <div className={"col-span-1 relative"}>
+                                    <div className={"md:col-span-1 col-span-2 relative"}>
                                         <Icon
                                             className={"text-zinc-500 right-4 absolute top-1/2 transform -translate-y-1/2"}
                                             type={"outline"}>
@@ -497,7 +497,7 @@ export default function Home() {
                                         <input id={"name"} required name={"name"} placeholder={"نام"}
                                                className={"placeholder-zinc-500 text-zinc-900 outline-none bg-background py-4 pl-4 pr-12 rounded-[8px] w-full"}/>
                                     </div>
-                                    <div className={"col-span-1 relative"}>
+                                    <div className={"md:col-span-1 col-span-2 relative"}>
                                         <Icon
                                             className={"text-zinc-500 right-4 absolute top-1/2 transform -translate-y-1/2"}
                                             type={"outline"}>
@@ -569,7 +569,7 @@ export default function Home() {
                         چه مجموعه‌هایی به اکانتینگ نیاز دارند؟
                     </h2>
 
-                    <div className={"grid lg:max-w-6xl mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-10"}>
+                    <div className={"grid lg:max-w-6xl mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-6 md:gap-6 mt-10"}>
 
                         {whichOneUseAccountingAppAnswers.map((item, i) =>
                             <div className={"relative"} key={i}>
@@ -587,7 +587,7 @@ export default function Home() {
             </section>
             <section id={"4"} className={"w-full bg-white pt-10 pb-6 md:pb-16 md:pt-20"}>
                 <div className={"container mx-auto"}>
-                    <h2 className={"text-right mb-6 md:text-center text-zinc-900 text-title-large md:text-headline-large font-bold"}>
+                    <h2 className={" mb-6 text-center text-zinc-900 text-title-large md:text-headline-large font-bold"}>
                         بیش از
                         <span className={"inline-flex text-primary-brand mx-2"}>
                         1000
@@ -663,7 +663,7 @@ export default function Home() {
                                 <Image objectFit={"contain"} layout={"fill"} src={"/logo.svg"}/>
                             </div>
                             <a href={"#demo-form"} id={"our-partnership-demo-button"}
-                               className={"flex items-center  text-white font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
+                               className={"flex items-center justify-center  text-white font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
 
                                 به همراهان پارس پویش بپیوندید
 
