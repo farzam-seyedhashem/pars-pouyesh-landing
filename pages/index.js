@@ -5,6 +5,8 @@ import Icon from "@/components/Icon";
 // const inter = Inter({ subsets: ['latin'] })
 import {useState, Fragment, useEffect} from "react";
 import {Dialog, Transition} from '@headlessui/react'
+import Script from "next/script";
+import Head from "next/head";
 
 export default function Home() {
     const featureSection = [
@@ -14,10 +16,12 @@ export default function Home() {
             description: "هر کاربر پیش از اتصال به اینترنت با روش‌های امن و چند عاملی احراز هویت شده و امکان اتصال به شبکه بدون احراز هویت وجود نخواهد داشت. "
         },
         {
-            icon: "price_check",
-            title: "کاهش هزینه‌های سازمان",
-            description: "با تعیین سقف حجم و ترافیک و زمان مصرفی کاربران، منابع سازمانی به صورت بهینه مصرف می‌شوند."
+            icon: "rubric",
+            title: "مشاهده و تحلیل رخدادهای شبکه در یک پنل",
+            description: "مدیران می‌توانند در یک پنل، اطلاعات مربوط به ترافیک مصرف شده توسط کاربران (Connection log) و لاگ تغییرات ایجاد شده بر روی پروفایل کاربران (Audit log) توسط ادمین‌ها را مشاهده کنند."
         },
+
+
         {
             icon: "network_check",
             title: "افزایش کیفیت دسترسی به اینترنت برای پرسنل و بهبود بهره‌وری",
@@ -28,15 +32,16 @@ export default function Home() {
         //     title: "عیب‌یابی آسان‌تر شبکه",
         //     description: "مدیران می‌توانند لاگ بلادرنگ درخواست‌های ارسال شده برای اتصال به شبکه را در IBSng به منظور عیب‌یابی مشاهده کنند."
         // },
-        {
-            icon: "rubric",
-            title: "مشاهده و تحلیل رخدادهای شبکه در یک پنل",
-            description: "مدیران می‌توانند در یک پنل، اطلاعات مربوط به ترافیک مصرف شده توسط کاربران (Connection log) و لاگ تغییرات ایجاد شده بر روی پروفایل کاربران (Audit log) توسط ادمین‌ها را مشاهده کنند."
-        },
+
         {
             icon: "description",
             title: "انطباق با الزامات قانونی کشور و ثبت لاگ شبکه",
             description: "مطابق با قوانین پلیس فتا، تمام ارائه‌دهندگان اینترنت اشتراکی باید لاگ ترافیک کاربران را حداقل تا 6 ماه ذخیره کنند تا در صورت بروز حملات سایبری، منشا حمله قابل شناسایی باشد."
+        },
+        {
+            icon: "price_check",
+            title: "کاهش هزینه‌های سازمان",
+            description: "با تعیین سقف حجم و ترافیک و زمان مصرفی کاربران، منابع سازمانی به صورت بهینه مصرف می‌شوند."
         },
         {
             icon: "sentiment_very_satisfied",
@@ -80,7 +85,7 @@ export default function Home() {
     ]
     const whyUS = [
         {
-            title: "بیش از 20 سال سابقه فعالیت در این حوزه",
+            title: "20+ سال سابقه فعالیت",
             icon: "check_circle",
 
         },
@@ -89,11 +94,11 @@ export default function Home() {
             icon: "clock_loader_90",
         },
         {
-            title: "مدیریت بیش از 40 هزار کاربر آنلاین همزمان",
+            title: "مدیریت 40+ هزار کاربر آنلاین همزمان",
             icon: "group",
         },
         {
-            title: "پشتیبانی 24*7",
+            title: "پشتیبانی 24×7",
             icon: "support_agent",
         },
     ]
@@ -281,6 +286,23 @@ export default function Home() {
 
     return (
         <div dir={"rtl"} className={"min-h-screen w-full bg-white"}>
+
+
+
+
+            <Head>
+                <meta name='robots' content='noindex'/>
+            </Head>
+            {/*Google Tag Manager*/}
+            <Script id={"google-tag-manager"} strategy={"beforeInteractive"} dangerouslySetInnerHTML={{__html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KPFFX88');`}}/>
+            {/*End Google Tag Manager*/}
+
+
+
             <div
                 className={"lg:block hidden sticky top-0  bg-white z-999 transform  border-b border-black border-opacity-[12%]"}>
                 <div className={"container mx-auto"}>
@@ -298,7 +320,7 @@ export default function Home() {
                                 </li>)}
                             </ul>
                         </div>
-                        <a href={"#demo-form"} id={"header-demo-request-button"} className={"flex items-center text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
+                        <a href={"#1"} id={"header-demo-request-button"} className={"flex items-center text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
                             درخواست دمو رایگان
                         </a>
                     </div>
@@ -371,7 +393,7 @@ export default function Home() {
                         {/*        </li>)}*/}
                         {/*    </ul>*/}
                         {/*</div>*/}
-                        <a href={"#demo-form"} id={"header-demo-request-button"}
+                        <a href={"#1"} id={"header-demo-request-button"}
                             className={"flex items-center justify-center mr-auto lg:mr-0 text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
                             درخواست دمو رایگان
                         </a>
@@ -379,12 +401,12 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className={"w-full  relative bg-primary-brand py-12 md:py-32"}>
-                <div className={"absolute  -left-[40px] bottom-0  w-6/12"}>
-                    <Image  height={608} width={1080} layout={"responsive"} src={"/head1.png"}/>
+            <section className={"w-full relative bg-primary-brand py-12 pb-0  md:py-24"}>
+                <div className={"md:absolute md:block hidden -left-[40px] bottom-0 w-10/12 md:w-6/12"}>
+                    <Image  height={720} width={960} layout={"responsive"} src={"/head-hero-section.png"}/>
                 </div>
                 <div className={"container mx-auto"}>
-                    <h1 className={"text-white max-w-4xl font-black text-display-small md:text-display-large"}>
+                    <h1 className={"text-white max-w-4xl font-black text-display-small md:text-display-medium"}>
                         20%
                         تخفیف
                         ویژه
@@ -411,18 +433,15 @@ export default function Home() {
                         افزایش دهید
                     </h2>
                     <div
-                        className={"max-w-2xl md:space-x-reverse mt-3 text-justify md:flex space-x-12 items-center"}>
-                        <p className={"md:max-w-3xl font-normal mb-4 text-body-large md:text-title-large text-white/[80%]"}>
+                        className={"lg:max-w-2xl md:max-w-sm lg:space-x-reverse mt-3 text-justify lg:flex lg:space-x-6 items-center"}>
+                        <p className={"lg:max-w-2xl font-normal lg:mb-0 mb-4 text-body-large md:text-body-large text-white/[80%]"}>
                             IBSng ابزار مورد نیاز برای مدیریت و نظارت بر کاربران و ترافیک شبکه داخلی سازمان را در اختیار
                             شما
                             قرار می‌دهد. با تعیین محدوده سرعت، پهنای باند و حجم مصرفی هر کاربر، کیفیت دسترسی به اینترنت
                             سازمان را برای پرسنل خود تضمین کرده و عملکرد شبکه را بهینه کنید.
                         </p>
-                        <p className={"md:max-w-3xl font-normal text-body-large md:text-title-large text-white/[80%]"}>
-                            این نرم‌افزار برای شناسایی و مدیریت رفتار مخاطره‌آمیز از سمت کاربران شبکه توسعه داده شده
-                            است. در
-                            صورت بروز مشکل امنیتی، این نرم‌افزار سازمان‌ شما و افراد مسئول در برابر امنیت شبکه را قادر
-                            می‌سازد تا به سرعت کاربر منشا حمله را شناسایی و از پیامدهای آن جلوگیری کنید.
+                        <p className={"lg:max-w-2xl font-normal text-body-large md:text-body-large text-white/[80%]"}>
+                            این نرم‌افزار برای شناسایی و مدیریت رفتار مخاطره‌آمیز از سمت کاربران شبکه توسعه داده شده است. در صورت بروز مشکل امنیتی، شما و افراد مسئول در برابر امنیت شبکه قادر خواهید بود به سرعت کاربر منشا حمله را شناسایی و از پیامدهای آن جلوگیری کنید.
                         </p>
                     </div>
                     <a href={"#demo-form"} id={"top-section-demo-form-button"}
@@ -433,6 +452,9 @@ export default function Home() {
                         </Icon>
                     </a>
 
+                </div>
+                <div className={"md:absolute md:hidden block -left-[40px] bottom-0 w-10/12 md:w-6/12"}>
+                    <Image  height={720} width={960} layout={"responsive"} src={"/head-hero-section.png"}/>
                 </div>
             </section>
             <section id={"1"} className={"w-full bg-white pb-6 md:pb-16 pt-12 md:pt-32"}>
@@ -445,10 +467,10 @@ export default function Home() {
                             </h2>
                             <div className={"grid grid-cols-2 mt-12 gap-8"}>
                                 {whyUS.map((item, i) => <div key={i} className={"col-span-1"}>
-                                    <Icon className={"text-[32px] text-primary-brand"}>
+                                    <Icon className={"text-[36px] text-primary-brand"}>
                                         {item.icon}
                                     </Icon>
-                                    <h4 className={"font-bold text-title-medium text-zinc-900"}>
+                                    <h4 className={" text-title-large text-zinc-800"}>
                                         {item.title}
                                     </h4>
                                 </div>)}
@@ -456,7 +478,7 @@ export default function Home() {
                         </div>
                         <div id={"demo-form"} className={"lg:col-span-5 md:col-span-6  col-span-12 md:mt-0 mt-4"}>
                             <div className={"w-full p-6 rounded-[12px] shadow-[0px_1px_4px_rgba(0,0,0,0.2)]"}>
-                                <h3 className={"mt-2 text-headline-small font-bold text-zinc-900"}>
+                                <h3 className={"mt-2 text-right md:text-center text-headline-small font-bold text-zinc-900"}>
                                     فرم درخواست دمو رایگان
                                 </h3>
                                 <p className={"text-zinc-700 text-body-large mt-2"}>
@@ -471,7 +493,7 @@ export default function Home() {
                                             type={"outline"}>
                                             badge
                                         </Icon>
-                                        <input required name={"name"} placeholder={"نام"}
+                                        <input id={"name"} required name={"name"} placeholder={"نام"}
                                                className={"placeholder-zinc-500 text-zinc-900 outline-none bg-background py-4 pl-4 pr-12 rounded-[8px] w-full"}/>
                                     </div>
                                     <div className={"col-span-1 relative"}>
@@ -480,7 +502,7 @@ export default function Home() {
                                             type={"outline"}>
                                             source_environment
                                         </Icon>
-                                        <input required name={"company"} placeholder={"نام شرکت"}
+                                        <input id={"company-name"} required name={"company"} placeholder={"نام شرکت"}
                                                className={"placeholder-zinc-500 text-zinc-900 outline-none bg-background py-4 pl-4 pr-12 rounded-[8px] w-full"}/>
                                     </div>
                                     <div className={"col-span-2 relative"}>
@@ -489,7 +511,7 @@ export default function Home() {
                                             type={"outline"}>
                                             phone
                                         </Icon>
-                                        <input required name={"phone"} placeholder={"شماره تماس"}
+                                        <input id={"phone-number"} required name={"phone"} placeholder={"شماره تماس"}
                                                className={"placeholder-zinc-500 text-zinc-900 outline-none bg-background py-4 pl-4 pr-12 rounded-[8px] w-full"}/>
                                     </div>
                                     <div className={"col-span-2 relative"}>
@@ -498,7 +520,7 @@ export default function Home() {
                                             type={"outline"}>
                                             email
                                         </Icon>
-                                        <input type={"email"} name={"email"} placeholder={"ایمیل"}
+                                        <input id={"email"} type={"email"} name={"email"} placeholder={"ایمیل"}
                                                className={"placeholder-zinc-500 text-zinc-900 outline-none bg-background py-4 pl-4 pr-12 rounded-[8px] w-full"}/>
                                     </div>
                                     <div className={"col-span-2 flex justify-end"}>
@@ -564,7 +586,7 @@ export default function Home() {
             </section>
             <section id={"4"} className={"w-full bg-white pt-10 pb-6 md:pb-16 md:pt-20"}>
                 <div className={"container mx-auto"}>
-                    <h2 className={"text-right md:text-center text-zinc-900 text-title-large md:text-headline-large font-bold"}>
+                    <h2 className={"text-right mb-6 md:text-center text-zinc-900 text-title-large md:text-headline-large font-bold"}>
                         تا این لحظه بیش از
                         <span className={"text-primary-brand mx-2"}>
                         1000
@@ -588,10 +610,14 @@ export default function Home() {
                     {/*        )}*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    <div className={"md:flex px-2 space-x-reverse md:space-x-6 justify-between items-center"}>
+                    <div className={"md:flex px-2 space-x-reverse md:space-x-6 md:relative justify-between items-center"}>
+
                         <div
                             className={" w-full md:w-6/12 mt-12 rounded-[24px]"}>
-                            <Image height={2578} width={3802} layout={"responsive"} src={"/brand-we-work.png"}/>
+                            <h2 className={"text-title-large text-center md:text-right text-zinc-900 font-bold mb-4"}>
+                                سازمان‌ها و دستگاه های دولتی
+                            </h2>
+                            <Image height={4722} width={4240} layout={"responsive"} src={"/partnership-logos.png"}/>
                             {/*<div className={"h-full  grid grid-cols-4 md:grid-cols-8 gap-2"}>*/}
                             {/*    {primaryLogo.map((item, i) =>*/}
                             {/*            i < 8 && <div*/}
@@ -630,24 +656,23 @@ export default function Home() {
                             {/*    )}*/}
                             {/*</div>*/}
                         </div>
+                        <div className={"w-full py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  flex justify-center"}>
+                            <a href={"#demo-form"} id={"our-partnership-demo-button"}
+                               className={"flex items-center  font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
 
+                                به همراهان پارس پویش بپیوندید
+
+                            </a>
+                        </div>
                         <div dir={"ltr"}
                              className={"w-full  md:w-6/12 mt-12 rounded-[24px] "}>
-                            <Image width={4372} height={1542} layout={"responsive"} src={"/brand-we-work-2.png"}/>
+                            <h2 className={"text-title-large text-center md:text-left text-zinc-900 font-bold mb-4"}>
+                                شرکت‌های کوچک و متوسط
+                            </h2>
+                            <Image width={3608} height={4122} layout={"responsive"} src={"/partnership-logos-2.png"}/>
                         </div>
                     </div>
-                    <div className={"mt-5 flex justify-center"}>
-                        <a href={"#demo-form"} id={"our-partnership-demo-button"}
-                            className={"flex items-center font-medium text-label-large rounded-full pl-4 pr-6 h-[40px] bg-primary-brand"}>
 
-                            دریافت
-                            و
-                            دموی رایگان
-                            <Icon className={"mr-2"}>
-                                arrow_back
-                            </Icon>
-                        </a>
-                    </div>
                 </div>
             </section>
             <section id={"5"}
@@ -680,7 +705,7 @@ export default function Home() {
                                 </div>
                                 <div
                                     className={"bg-primary-brand flex items-center justify-center px-4 py-3 font-bold text-title-medium col-span-1 w-full lg:w-3/12 h-[140px] rounded-[8px] border-primary-brand"}>
-                                    3 ماه پشتیبانی رایگان
+                                    امکان تعریف کاربر نامحدود
 
                                 </div>
                                 <div
@@ -731,14 +756,16 @@ export default function Home() {
             <footer className={"text-right md:text-center"}>
                 <div className={"bg-primary-brand py-4 "}>
                     <div className={"container mx-auto"}>
-                        <div className={"flex justify-between items-center"}>
-                            <div className={"md:w-[170px] w-[100px]"}>
-                                <Image width={966} height={297} layout={"responsive"} src={"/logo-white.png"}
-                                       alt={"logo"}/>
-                            </div>
+                        <div className={"flex justify-center items-center"}>
+                            {/*<div className={"md:w-[170px] w-[100px]"}>*/}
+                            {/*    <Image width={966} height={297} layout={"responsive"} src={"/logo-white.png"}*/}
+                            {/*           alt={"logo"}/>*/}
+                            {/*</div>*/}
                             <a href={"#demo-form"} id={"footer-demo-request"}
-                                className={"flex items-center px-6 rounded-full text-label-large h-[40px] bg-white text-primary-brand font-medium"}>
+                                className={"flex items-center font-bold px-6 rounded-full text-label-large h-[40px] bg-white text-primary-brand "}>
+
                                 دریافت دمو رایگان
+
                             </a>
                         </div>
                     </div>

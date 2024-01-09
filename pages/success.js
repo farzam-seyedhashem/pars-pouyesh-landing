@@ -12,7 +12,7 @@ export default function Success(){
             </h2>
 
                <a href={"/"} className={"flex justify-center items-center border text-primary-brand border-primary-brand px-6 h-[40px] rounded-full mt-8"}>
-                   بازگشت به لندینگ
+                   بازگشت به صفحه قبل
                </a>
            </div>
         </div>
