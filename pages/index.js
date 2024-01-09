@@ -766,7 +766,7 @@ export default function Home() {
                             {/*    <Image width={966} height={297} layout={"responsive"} src={"/logo-white.png"}*/}
                             {/*           alt={"logo"}/>*/}
                             {/*</div>*/}
-                            <a href={"#demo-form"} id={"footer-demo-request"}
+                            <a href={"#1"} id={"footer-demo-request"}
                                 className={"flex items-center font-bold px-8 rounded-full text-body-large h-[48px] bg-white text-primary-brand "}>
 
                                 دریافت دمو رایگان
