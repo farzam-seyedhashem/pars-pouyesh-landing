@@ -698,7 +698,7 @@ export default function Home() {
                                 گرفته است. برای بهره‌مندی از این شرایط ویژه همین الان اقدام کنید!
                             </p>
                             <div
-                                className={"mt-6 text-white text-center lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
+                                className={"mt-6 text-white  text-center lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
                                 <div
                                     className={"bg-primary-brand flex items-center justify-center px-4 py-3 font-bold text-title-medium col-span-1 w-full lg:w-3/12 h-[140px] rounded-[8px]   border-primary-brand"}>
                                     20% تخفیف اکانتینگ IBSng
@@ -710,7 +710,7 @@ export default function Home() {
                                 </div>
                                 <div
                                     className={"bg-primary-brand flex items-center justify-center px-4 py-3 font-bold text-title-medium col-span-1 w-full lg:w-3/12 h-[140px] rounded-[8px] border-primary-brand"}>
-                                    امکان تعریف کاربر نامحدود
+                                    ٪۲۰ تخفیف ماژول‌های تکمیلی
 
                                 </div>
                                 <div
