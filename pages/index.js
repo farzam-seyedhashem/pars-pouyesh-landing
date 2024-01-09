@@ -467,7 +467,7 @@ export default function Home() {
                                 چرا نرم‌افزار اکانتینگ IBSng؟
                             </h2>
                             <div className={"grid grid-cols-2 mt-12 gap-4 max-w-2xl"}>
-                                {whyUS.map((item, i) => <div key={i} className={"shadow-[0px_1px_4px_rgba(0,0,0,0.2)] bg-white border border-black/[12%] rounded-[8px]  px-6 py-6 col-span-1"}>
+                                {whyUS.map((item, i) => <div key={i} className={"hover:transform hover:-translate-y-[10px] transition-all duration-300 shadow-[0px_1px_4px_rgba(0,0,0,0.2)] bg-white border border-black/[12%] rounded-[8px]  px-6 py-6 col-span-1"}>
                                     <Icon className={"text-[36px] text-primary-brand"}>
                                         {item.icon}
                                     </Icon>
@@ -483,7 +483,7 @@ export default function Home() {
                                     فرم درخواست دمو رایگان
                                 </h3>
                                 <p className={"text-zinc-700 text-body-large mt-2"}>
-                                    برای درخواست دمو فرم زیر را تکمیل
+                                    برای درخواست دمو و کسب اطلاعات بیشتر فرم زیر را تکمیل
                                     کنید.
                                 </p>
                                 <form method={"POST"} action={"/api/send"}
@@ -588,12 +588,12 @@ export default function Home() {
             <section id={"4"} className={"w-full bg-white pt-10 pb-6 md:pb-16 md:pt-20"}>
                 <div className={"container mx-auto"}>
                     <h2 className={"text-right mb-6 md:text-center text-zinc-900 text-title-large md:text-headline-large font-bold"}>
-                        تا این لحظه بیش از
-                        <span className={"text-primary-brand mx-2"}>
+                        بیش از
+                        <span className={"inline-flex text-primary-brand mx-2"}>
                         1000
                             </span>
                         برند معتبر به
-                        <span className={"text-primary-brand mx-2"}>
+                        <span className={"inline-flex text-primary-brand mx-2"}>
                         پارس پویش
                         </span>
                         اعتماد کرده‌اند
@@ -659,7 +659,7 @@ export default function Home() {
                             {/*</div>*/}
                         </div>
                         <div className={"w-full py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  block justify-center"}>
-                            <div className={"block w-[280px] mb-6 h-[80px] mx-auto relative"}>
+                            <div className={"opacity-[85%] block w-[180px] mb-6 h-[60px] mx-auto relative"}>
                                 <Image objectFit={"contain"} layout={"fill"} src={"/logo.svg"}/>
                             </div>
                             <a href={"#demo-form"} id={"our-partnership-demo-button"}
