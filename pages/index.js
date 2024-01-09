@@ -320,7 +320,7 @@ export default function Home() {
                                 </li>)}
                             </ul>
                         </div>
-                        <a href={"#1"} id={"header-demo-request-button"} className={"flex items-center text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
+                        <a href={"#1"} id={"header-demo-request-button"} className={"text-white flex items-center text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
                             درخواست دمو رایگان
                         </a>
                     </div>
@@ -376,7 +376,7 @@ export default function Home() {
                 <div className={"container mx-auto"}>
                     <div className={"flex lg:justify-between items-center h-[64px] md:h-[72px] "}>
                         <button onClick={() => setIsOpen(true)}
-                                className={"flex items-center justify-center rounded-full w-[48px] h-[48px] hover:bg-black/[4%]"}>
+                                className={"flex items-center text-white justify-center rounded-full w-[48px] h-[48px] hover:bg-black/[4%]"}>
                             <Icon className={"text-black"}>
                                 menu
                             </Icon>
@@ -526,7 +526,7 @@ export default function Home() {
                                     </div>
                                     <div className={"col-span-2 flex justify-end"}>
                                         <button id={"demo-form-submit"} type={"submit"}
-                                                className={"h-[40px] px-6 bg-primary-brand rounded-full"}>
+                                                className={"h-[40px] text-white px-6 bg-primary-brand rounded-full"}>
                                             ثبت درخواست دمو
                                         </button>
                                     </div>
@@ -663,7 +663,7 @@ export default function Home() {
                                 <Image objectFit={"contain"} layout={"fill"} src={"/logo.svg"}/>
                             </div>
                             <a href={"#demo-form"} id={"our-partnership-demo-button"}
-                               className={"flex items-center  font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
+                               className={"flex items-center  text-white font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
 
                                 به همراهان پارس پویش بپیوندید
 
