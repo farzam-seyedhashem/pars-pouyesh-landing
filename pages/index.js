@@ -431,6 +431,7 @@ export default function Home() {
                         IBSng
                         </span>
                         افزایش دهید
+                        ...
                     </h2>
                     <div
                         className={"lg:max-w-2xl md:max-w-sm lg:space-x-reverse mt-3 text-justify lg:flex lg:space-x-6 items-center"}>
@@ -465,8 +466,8 @@ export default function Home() {
                             <h2 className={"text-right text-zinc-900 text-title-large md:text-headline-large font-extrabold"}>
                                 چرا نرم‌افزار اکانتینگ IBSng؟
                             </h2>
-                            <div className={"grid grid-cols-2 mt-12 gap-8"}>
-                                {whyUS.map((item, i) => <div key={i} className={"col-span-1"}>
+                            <div className={"grid grid-cols-2 mt-12 gap-4 max-w-2xl"}>
+                                {whyUS.map((item, i) => <div key={i} className={"shadow-[0px_1px_4px_rgba(0,0,0,0.2)] bg-white border border-black/[12%] rounded-[8px]  px-6 py-6 col-span-1"}>
                                     <Icon className={"text-[36px] text-primary-brand"}>
                                         {item.icon}
                                     </Icon>
@@ -482,8 +483,8 @@ export default function Home() {
                                     فرم درخواست دمو رایگان
                                 </h3>
                                 <p className={"text-zinc-700 text-body-large mt-2"}>
-                                    برای درخواست دمو و کسب اطلاع دقیق‌تر از ویژگی‌های این نرم‌افزار فرم زیر را تکمیل
-                                    کنید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند.
+                                    برای درخواست دمو فرم زیر را تکمیل
+                                    کنید.
                                 </p>
                                 <form method={"POST"} action={"/api/send"}
                                       className={"grid mb-2 mt-4 grid-cols-2 gap-4"}>
@@ -615,7 +616,8 @@ export default function Home() {
                         <div
                             className={" w-full md:w-6/12 mt-12 rounded-[24px]"}>
                             <h2 className={"text-title-large text-center md:text-right text-zinc-900 font-bold mb-4"}>
-                                سازمان‌ها و دستگاه های دولتی
+                                سازمان‌ها و دستگاه‌های دولتی
+
                             </h2>
                             <Image height={4722} width={4240} layout={"responsive"} src={"/partnership-logos.png"}/>
                             {/*<div className={"h-full  grid grid-cols-4 md:grid-cols-8 gap-2"}>*/}
@@ -656,7 +658,10 @@ export default function Home() {
                             {/*    )}*/}
                             {/*</div>*/}
                         </div>
-                        <div className={"w-full py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  flex justify-center"}>
+                        <div className={"w-full py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  block justify-center"}>
+                            <div className={"block w-[280px] mb-6 h-[80px] mx-auto relative"}>
+                                <Image objectFit={"contain"} layout={"fill"} src={"/logo.svg"}/>
+                            </div>
                             <a href={"#demo-form"} id={"our-partnership-demo-button"}
                                className={"flex items-center  font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
 
@@ -693,7 +698,7 @@ export default function Home() {
                                 گرفته است. برای بهره‌مندی از این شرایط ویژه همین الان اقدام کنید!
                             </p>
                             <div
-                                className={"mt-6 lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
+                                className={"mt-6 text-center lg:pl-12 lg:space-x-reverse lg:space-x-4 grid gap-4 lg:gap-0 grid-cols-2 lg:flex"}>
                                 <div
                                     className={"bg-primary-brand flex items-center justify-center px-4 py-3 font-bold text-title-medium col-span-1 w-full lg:w-3/12 h-[140px] rounded-[8px]   border-primary-brand"}>
                                     20% تخفیف اکانتینگ IBSng
@@ -762,7 +767,7 @@ export default function Home() {
                             {/*           alt={"logo"}/>*/}
                             {/*</div>*/}
                             <a href={"#demo-form"} id={"footer-demo-request"}
-                                className={"flex items-center font-bold px-6 rounded-full text-label-large h-[40px] bg-white text-primary-brand "}>
+                                className={"flex items-center font-bold px-8 rounded-full text-body-large h-[48px] bg-white text-primary-brand "}>
 
                                 دریافت دمو رایگان
 
