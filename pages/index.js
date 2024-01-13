@@ -614,7 +614,7 @@ export default function Home() {
                     <div className={"md:flex px-2 space-x-reverse md:space-x-6 md:relative justify-between items-center"}>
 
                         <div
-                            className={" w-full md:w-6/12 mt-12 rounded-[24px]"}>
+                            className={"z-10 w-full md:w-6/12 mt-12 rounded-[24px]"}>
                             <h2 className={"text-title-large text-center md:text-right text-zinc-900 font-bold mb-4"}>
                                 سازمان‌ها و دستگاه‌های دولتی
 
@@ -658,19 +658,19 @@ export default function Home() {
                             {/*    )}*/}
                             {/*</div>*/}
                         </div>
-                        <div className={"w-full py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  block justify-center"}>
-                            <div className={"opacity-[85%] block w-[180px] mb-6 h-[60px] mx-auto relative"}>
+                        <div className={"w-full z-20 py-4 md:w-fit md:py-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  block justify-center"}>
+                            <div className={"z-20 opacity-[85%] block w-[180px] mb-6 h-[60px] mx-auto relative"}>
                                 <Image objectFit={"contain"} layout={"fill"} src={"/logo.svg"}/>
                             </div>
-                            <a href={"#demo-form"} id={"our-partnership-demo-button"}
-                               className={"flex items-center justify-center  text-white font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
+                            <a href={"#1"} id={"our-partnership-demo-button"}
+                               className={"flex z-20 items-center justify-center  text-white font-medium text-label-large lg:text-body-large rounded-full px-6 h-[40px] lg:px-8 lg:h-[48px] bg-primary-brand"}>
 
                                 به همراهان پارس پویش بپیوندید
 
                             </a>
                         </div>
                         <div dir={"ltr"}
-                             className={"w-full  md:w-6/12 mt-12 rounded-[24px] "}>
+                             className={"w-full z-10  md:w-6/12 mt-12 rounded-[24px] "}>
                             <h2 className={"text-title-large text-center md:text-left text-zinc-900 font-bold mb-4"}>
                                 شرکت‌های کوچک و متوسط
                             </h2>
@@ -772,6 +772,7 @@ export default function Home() {
                                 دریافت دمو رایگان
 
                             </a>
+
                         </div>
                     </div>
                 </div>

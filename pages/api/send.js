@@ -1,39 +1,37 @@
 import {EmailTemplate} from '@/components/EmailTemplate';
 import {Resend} from 'resend';
-// import formidable from 'formidable';
-import { redirect } from 'next/navigation';
 
 import bodyParser from 'body-parser'
-export const config = {
-    api: {
-        bodyParser: true
-    },
-}
+
 const resend = new Resend("re_PgZuGxBH_4gsdh1zTwtcA49o8PX135BJq");
 
 export default async function handler(req, res) {
     const {method} = req
     const reqData = req.body
 
-
     if (method === "POST") {
-        // const form = formidable({multiples: true});
-        // await form.parse(req, (err, fields, files) => {
-        //     console.log(fields.name)
-        // })
-        const {data, error} = await resend.emails.send({
-            from: 'send@atighcompany.com',
-            to: ['sales@parspooyesh.com','farzam.seyedhashem@gmail.com'],
-            // sales@parspooyesh.com
-            subject: `${"درخواست دموی رایگان"+" "+reqData.name}`,
-            react: EmailTemplate({reqData: reqData}),
+        // http://65.109.183.1:3000/api/hello
+
+         fetch("http://65.109.183.1:3000/api/hello", {
+            method: "POST",
+            body: JSON.stringify({data:req.body}),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        }).then((response) => response.json()).then((json) => {
+          console.log(json)
+            if (json) {
+                res.redirect(301, `/success`)
+            } else{
+                res.redirect(301, `/`)
+            }
         });
-        if (error) {
-             return res.redirect(301, `/`)
-        }
-        return res.redirect(301, `/success`)
+        // if (error) {
+        //       res.redirect(301, `/`)
+        // }
+        //  res.redirect(301, `/success`)
     } else {
-        return res.redirect(301, `/`)
+         res.redirect(301, `/`)
     }
     // switch (method) {
     //     case 'POST':
