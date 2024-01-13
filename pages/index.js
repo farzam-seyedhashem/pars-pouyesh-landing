@@ -394,7 +394,7 @@ export default function Home() {
                         {/*    </ul>*/}
                         {/*</div>*/}
                         <a href={"#1"} id={"header-demo-request-button"}
-                            className={"flex items-center justify-center mr-auto lg:mr-0 text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
+                            className={"flex items-center justify-center text-white mr-auto lg:mr-0 text-label-large font-medium h-[40px] px-6 rounded-full bg-primary-brand"}>
                             درخواست دمو رایگان
                         </a>
                     </div>
