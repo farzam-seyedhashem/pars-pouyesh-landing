@@ -445,7 +445,7 @@ export default function Home() {
                             این نرم‌افزار برای شناسایی و مدیریت رفتار مخاطره‌آمیز از سمت کاربران شبکه توسعه داده شده است. در صورت بروز مشکل امنیتی، شما و افراد مسئول در برابر امنیت شبکه قادر خواهید بود به سرعت کاربر منشا حمله را شناسایی و از پیامدهای آن جلوگیری کنید.
                         </p>
                     </div>
-                    <a href={"#demo-form"} id={"top-section-demo-form-button"}
+                    <a href={"#1"} id={"top-section-demo-form-button"}
                         className={"flex w-fit items-center text-primary-brand  mt-6   border  bg-white h-[40px] pr-6 pl-4 rounded-full"}>
                         IBSNG را در سازمان خود تجربه کنید
                         <Icon className={"mr-2"}>
